@@ -1,0 +1,12 @@
+body{
+    background: url('/assets/marvel.png');
+}
+
+.crud{
+    background-color: rgb(250, 80, 80);
+}
+
+#heroes{
+    background-color: rgba(67, 245, 117, 0.888);
+    height: 200px;
+}
