@@ -4,3 +4,5 @@
 
 
 Este proyecto contiene el crud para aplicar a cada heroe.
+
+video: https://youtu.be/iHmlwKdD-Qk
