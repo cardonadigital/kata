@@ -1,0 +1,24 @@
+{
+    "Superheroe Marvel": [
+      {
+        "id": 1,
+        "nombre": "Hulk",
+        "poder": "Fuerza"
+      },
+      {
+        "id": 2,
+        "nombre": "IronMan",
+        "poder": "Inteligencia"
+      },
+      {
+        "id": 3,
+        "nombre": "Hawkeye",
+        "poder": "Punteria"
+      },
+      {
+        "id": 4,
+        "nombre": "Thor",
+        "poder": "Trueno"
+      }
+    ]
+  }
