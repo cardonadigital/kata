@@ -4,30 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Api crud Marvel Heroes</title>
+  <title>Heroes Marvel</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <!-- My styles -->
+  <link rel="stylesheet" href="./css/myStyle.css">
 </head>
 
-<body>
-  <h1>Api crud Marvel Heroes</h1>
-  <section class="crud">
+<body class="d-flex justify-content-center">
+  <section class="crud mx-auto">
+    <h1 class="text-center mt-5">Heroes Marvel</h1>
     <article>
-      <h2 class="crud-title">Agregar Santo</h2>
-      <form class="crud-form">
+      <h2 class="crud-title text-center">Agregar Heroe</h2>
+      <form class="crud-form d-flex justify-content-center">
         <input type="text" name="nombre" placeholder="nombre" required>
         <br>
-        <input type="text" name="constelacion" placeholder="constelación" required>
+        <input type="text" name="poder" placeholder="poder" required>
         <br>
         <input type="submit" value="Enviar">
         <input type="hidden" name="id">
       </form>
     </article>
-    <article>
-      <h2>Ver Santos</h2>
+    <h2 class="text-center mt-5">Heroes</h2>
+    <article class="d-flex justify-content-around" id="heroes">
       <table class="crud-table">
+        
         <thead>
           <tr>
             <th>Nombre</th>
-            <th>Constelación</th>
+            <th>Poder</th>
             <th>Acciones</th>
           </tr>
         </thead>
@@ -37,14 +44,16 @@
   </section>
   <template id="crud-template">
     <tr>
-      <td class="name"></td>
-      <td class="constellation"></td>
+      <td class="nombre"></td>
+      <td class="poder"></td>
       <td>
-        <button class="edit">Editar</button>
-        <button class="delete">Eliminar</button>
+        <button class="edit btn btn-primary">Editar</button>
+        <button class="delete btn btn-danger">Eliminar</button>
       </td>
     </tr>
   </template>
+  <!-- My javascript document -->
+  <script src="js/index.js"></script>
 </body>
 
 </html>
